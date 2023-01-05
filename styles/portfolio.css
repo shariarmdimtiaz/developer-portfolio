@@ -19,6 +19,7 @@
     color:#FD6E0A;
     font-weight: 700;
     font-size: 20px;
+    margin-left: 30px;
     padding: 18px 35px;
     height: 64px;
     border-width: 1px;
@@ -167,5 +168,36 @@ main{
 .resume-button{
     margin-top: 50px;
     text-align: center;
+    margin-bottom: 100px;
 }
 
+/* contact styles */
+.contact{
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 200px;
+}
+.contact .section-title{
+    text-align: left;
+}
+
+.contact input[type="text"], input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+
+input{
+    height: 64px;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+/* footer styles */
+footer{
+    text-align: center;
+}
