@@ -10,7 +10,7 @@
     font-weight: 700;
     font-size: 20px;
     padding: 18px 35px;
-    height: 64px;
+    height: auto;
     border: none;
     border-radius: 5px;
     background-color: #FD6E0A;
@@ -20,6 +20,7 @@
     font-weight: 700;
     font-size: 20px;
     margin-left: 30px;
+    margin-top: 20px;
     padding: 18px 35px;
     height: 64px;
     border-width: 1px;
@@ -118,7 +119,7 @@ main{
 .what-i-do{
     margin-top: 130px;
     padding: 130px 150px;
-    text-align: left;
+    text-align: justify;
 }
 .skills-container{
     display: flex;
@@ -146,8 +147,7 @@ main{
     gap: 24px;
 }
 .resume-item{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 0 30px;
 }
 .resume .title{
     font-weight: 700;
@@ -205,4 +205,66 @@ footer{
     flex-direction: column;
     text-align: center;
     margin: 20px 0;
+}
+
+
+/* media queries */
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 10%;
+    }
+    .banner,.about-info-container, .skills-container, .resume-content, .contact{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-around;      
+    }
+    .about, .contact, .what-i-do{
+        padding: 5%;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0;
+    }
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+    nav{
+        flex-direction: column;
+        margin: 0;
+        padding: 10px 10px;
+    }
+    nav ul{
+        flex-direction: column;   
+        margin: 0;     
+        padding: 0;
+    }
+    nav ul li{
+        margin: 0;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .banner, .about-info-container, .skills-container, .resume-content, .contact{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-around;      
+    }
+    .about, .contact, .what-i-do{
+        padding: 5%;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0;
+    }
+
+    
+}
+
+
+.hide{
+    display: none;
 }
